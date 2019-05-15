@@ -139,7 +139,9 @@ let person = {
   firstName : 'santosh',
   lastName : 'kumar',
   fullName : () => {
-    return this.firstName + this.lastName;
+    let firstName = 'sa';
+    let lastName = 'nan';
+    return firstName + lastName;
   }
 }
 console.log('5()',person.fullName());
