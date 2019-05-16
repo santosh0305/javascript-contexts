@@ -1,8 +1,8 @@
 var a=1;
-function addA(){
-  return a;
+function addA(a){
+  return this.a;
 }
-console.log('addA',addA()); 
+console.log('addA',addA(a)); 
 ///////////////////////////////////////////////
 var b=1;
 function addB(){
@@ -15,10 +15,11 @@ function addBB(){
   let c = b++;
   return b;
 }
-console.log('addBB',addBB());  ///////////////////////////////////////////////
+console.log('addBB',addBB());  
+///////////////////////////////////////////////
 var b=1;
 function addBBB(){
-  let c = b++;
+  var c = b++;
   return c;
 }
 console.log('addBBB',addBBB());  
@@ -27,7 +28,7 @@ var c=1;
 function addC(c){
   return this.c;
 }
-console.log('addC',addC(1));  
+console.log('addC',addC());
 ///////////////////////////////////////////////
 var d=1;
 function addD(){
@@ -107,10 +108,10 @@ console.log('addF',addF());
 function addMe(a,b){
   return a+b;
 }
-console.log('addMe(1,2)',addMe(1,2));
 function addMe(a,b,c){
   return a+b+c;
 }
+console.log('addMe(1,2)',addMe(1,2));
 console.log('addMe(1,2,3)',addMe(1,2,3));
 ///////////////////////////////////////////////
 let numbers = [1,2,2,3,4,4,5]
