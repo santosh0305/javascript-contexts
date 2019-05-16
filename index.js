@@ -2,27 +2,27 @@ var a=1;
 function addA(a){
   return this.a;
 }
-console.log('addA',addA(a)); 
+console.log('addA',addA(a));
 ///////////////////////////////////////////////
 var b=1;
 function addB(){
   return b++;
 }
-console.log('addB',addB());  
+console.log('addB',addB());
 ///////////////////////////////////////////////
 var b=1;
 function addBB(){
   let c = b++;
   return b;
 }
-console.log('addBB',addBB());  
+console.log('addBB',addBB());
 ///////////////////////////////////////////////
 var b=1;
 function addBBB(){
   var c = b++;
   return c;
 }
-console.log('addBBB',addBBB());  
+console.log('addBBB',addBBB());
 ///////////////////////////////////////////////
 var c=1;
 function addC(c){
